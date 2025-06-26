@@ -9,7 +9,7 @@ public:
         for(int i=0;i<nums.size();i++){
             int a=nums[i];
             int b=target-a;
-            if(hashmap[b] && i!=hashmap[b]){
+            if(hashmap.find(b)!=hashmap.end() && i!=hashmap[b]){
                 return {i,hashmap[b]};
                 break;
             }

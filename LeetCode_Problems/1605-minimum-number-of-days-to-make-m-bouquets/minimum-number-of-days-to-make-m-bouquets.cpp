@@ -17,7 +17,7 @@ public:
         }
         return result;
     }
-    int nobou(vector<int>arr,int k,int bday){
+    int nobou(vector<int>&arr,int k,int bday){
         int count=0;
         int prefixsum=0;
         for(int i=0;i<arr.size();i++){
